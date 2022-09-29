@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: null-website 
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: web
+    server: # server addr 
+  project: default
+  source:
+    path: k8s
+    repoURL: https://github.com/null-channel/null-web
+    targetRevision: HEAD
