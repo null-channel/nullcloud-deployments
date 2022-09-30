@@ -13,8 +13,6 @@ spec:
     path: k8s
     repoURL: https://github.com/null-channel/null-web
     targetRevision: HEAD
-    directory:
-      recurse: true
   syncPolicy:
         automated:
             prune: true
