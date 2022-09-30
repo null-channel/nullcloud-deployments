@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     name: in-cluster
-  project: null-cloud
+    namespace: web
   source:
     path: k8s
     repoURL: https://github.com/null-channel/null-web
