@@ -8,9 +8,14 @@ metadata:
 spec:
   destination:
     namespace: web
-    server: # server addr 
-  project: default
+    server: https://kubernetes.default.svc
+  project: nullcloud
   source:
     path: k8s
     repoURL: https://github.com/null-channel/null-web
     targetRevision: HEAD
+    directory:
+      recurse: true
+
+
+      
