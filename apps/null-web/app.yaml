@@ -12,7 +12,7 @@ spec:
   source:
     path: k8s
     repoURL: https://github.com/null-channel/null-web
-    targetRevision: argo-deployments
+    targetRevision: HEAD
     directory:
       recurse: true
   syncPolicy:
