@@ -7,15 +7,16 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: web
-    server: https://kubernetes.default.svc
-  project: nullcloud
+    name: in-cluster
+  project: null-cloud
   source:
     path: k8s
     repoURL: https://github.com/null-channel/null-web
-    targetRevision: HEAD
+    targetRevision: argo-deployments
     directory:
       recurse: true
-
-
-      
+  syncPolicy:
+        automated:
+            prune: true
+            allowEmpty: true
+            selfHeal: true
