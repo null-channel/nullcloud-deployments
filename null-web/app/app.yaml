@@ -11,8 +11,8 @@ spec:
     server: https://kubernetes.default.svc
   project: nullcloud
   source:
-    path: k8s
-    repoURL: https://github.com/null-channel/null-web
+    path: null-web/deploy/overlays/production
+    repoURL: https://github.com/null-channel/nullcloud-deployments
     targetRevision: HEAD
     directory:
       recurse: true
