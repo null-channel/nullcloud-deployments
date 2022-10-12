@@ -1,21 +1,22 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: null-website 
+  name: null-deployments
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: web
-    server: https://kubernetes.default.svc
-  project: null-cloud
+    name: in-cluster
+  project: default
   source:
-    path: null-web/deploy/overlays/production
+    path: "apps"
     repoURL: https://github.com/null-channel/nullcloud-deployments
-    targetRevision: HEAD
+    targetRevision: main
     directory:
       recurse: true
-
-
-      
+  syncPolicy:
+        automated:
+            prune: true
+            allowEmpty: true
+            selfHeal: true
