@@ -9,7 +9,7 @@ spec:
   destination:
     namespace: web
     server: https://kubernetes.default.svc
-  project: nullcloud
+  project: null-cloud
   source:
     path: null-web/deploy/overlays/production
     repoURL: https://github.com/null-channel/nullcloud-deployments
