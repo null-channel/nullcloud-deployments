@@ -12,7 +12,7 @@ spec:
   source:
     path: "apps"
     repoURL: https://github.com/null-channel/nullcloud-deployments
-    targetRevision: main
+    targetRevision: HEAD
     directory:
       recurse: true
   syncPolicy:
