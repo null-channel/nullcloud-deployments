@@ -36,4 +36,10 @@ spec:
                 name: null-bot-token
                 key: token
                 optional: false
+          - name: GUILD_ID
+            valueFrom:
+              secretKeyRef:
+                name: guild-id
+                key: guild_id
+                optional: false
 
