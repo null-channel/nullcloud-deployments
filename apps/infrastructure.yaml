@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: null-bot
+  name: infra
   namespace: argocd
 spec:
   destination:
     name: in-cluster
-    namespace: null-bot
+    namespace: infra
   project: null-cloud
   source:
     path: deployments/infra/overlays/prod
