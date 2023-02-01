@@ -39,7 +39,7 @@ spec:
           - name: GUILD_ID
             valueFrom:
               secretKeyRef:
-                name: guild-id
+                name: null-bot-token
                 key: guild_id
                 optional: false
 
