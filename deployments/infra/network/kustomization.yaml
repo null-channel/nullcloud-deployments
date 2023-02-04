@@ -1,6 +1,2 @@
 resources:
-- advertisement.yaml
-- metallb.yaml
-- metellb-config.yaml
 - null-cloud-gateway.yaml
-- public-ip-pool.yaml
