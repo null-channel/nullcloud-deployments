@@ -1,5 +1,4 @@
 resources:
-- ../../argocd
 - ../../certs
 - ../../cloudflare
 - ../../network
