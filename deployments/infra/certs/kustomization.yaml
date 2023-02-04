@@ -3,4 +3,3 @@ resources:
 - cf-certificate.yaml
 - cf-origin-issuer-istio.yaml
 - cf-origin-issuer.yaml
-- istio-gateway.yaml
