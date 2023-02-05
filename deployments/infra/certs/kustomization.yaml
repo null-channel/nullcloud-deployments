@@ -1,5 +1,4 @@
 resources:
-- cert-manager.yaml
 - cf-certificate.yaml
 - cf-origin-issuer-istio.yaml
 - cf-origin-issuer.yaml
