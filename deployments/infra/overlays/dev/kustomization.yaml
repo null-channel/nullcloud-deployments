@@ -1,5 +1,4 @@
 resources:
 - ../../certs
 - ../../cloudflare
-- ../../network
 - ../../metallb
