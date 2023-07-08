@@ -1,7 +1,7 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  name: eddington-ui-vs 
+  name: eddington-api-vitrual-service 
 spec:
   hosts:
   - "*"
