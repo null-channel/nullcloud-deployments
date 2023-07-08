@@ -2,5 +2,5 @@ resources:
 - ../../ui
 - ../../api
 - ../../container-runner/default
-
+- ../../networking
 

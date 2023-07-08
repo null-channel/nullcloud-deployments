@@ -2,3 +2,4 @@ resources:
 - ../../ui
 - ../../api
 - ../../container-runner
+- ../../networking
