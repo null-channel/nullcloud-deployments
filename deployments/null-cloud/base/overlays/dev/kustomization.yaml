@@ -1,0 +1,4 @@
+resources:
+- ../../ui
+- ../../api
+- ../../container-runner

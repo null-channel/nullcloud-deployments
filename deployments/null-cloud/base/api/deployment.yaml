@@ -1,28 +1,20 @@
----
-kind: Namespace
-apiVersion: v1
-metadata:
-  name: web
-  labels:
-    name: web
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: null-web
+  name: eddington-api
   namespace: web
 spec:
   selector:
     matchLabels:
-      app: null-web
+      app: eddington-api
   template:
     metadata:
       labels:
-        app: null-web
+        app: eddington-api
     spec:
       containers: 
-      - name: null-web
-        image: nullchannel/nullcloud-frontend:45c9d8b515151caa55210798f34e54aed7891fdf
+      - name: eddington-api
+        image: nullchannel/eddington-api:e75d7be8fa58c3a5d01d094550dd28b3ae6515e2
         resources:
           limits:
             memory: "128Mi"

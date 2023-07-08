@@ -1,0 +1,31 @@
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: web
+  labels:
+    name: web
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eddington-ui
+spec:
+  selector:
+    matchLabels:
+      app: eddington-ui
+  template:
+    metadata:
+      labels:
+        app: eddington-ui
+    spec:
+      containers: 
+      - name: eddington-ui
+        image: nullchannel/eddington-ui:e75d7be8fa58c3a5d01d094550dd28b3ae6515e2
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
+

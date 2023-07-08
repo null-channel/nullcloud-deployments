@@ -10,8 +10,6 @@ spec:
       port: 22
       keyPath: /home/marek/.ssh/k0s-certs/k0s 
     role: controller+worker
-    installFlags:
-      - --no-taints
   - ssh:
       address: 10.1.2.2
       user: root
