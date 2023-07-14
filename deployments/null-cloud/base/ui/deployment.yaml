@@ -21,7 +21,7 @@ spec:
     spec:
       containers: 
       - name: eddington-ui
-        image: nullchannel/eddington-ui:e75d7be8fa58c3a5d01d094550dd28b3ae6515e2
+        image: nullchannel/eddington-ui:005effbaede835d7ff59f0819d82498c9f57ece8
         resources:
           limits:
             memory: "128Mi"

@@ -13,7 +13,7 @@ spec:
     spec:
       containers: 
       - name: eddington-api
-        image: nullchannel/eddington-api:fcb2c04aa2d25240f5df3427fb01bd90d0338ffa
+        image: nullchannel/eddington-api:005effbaede835d7ff59f0819d82498c9f57ece8
         resources:
           limits:
             memory: "128Mi"
