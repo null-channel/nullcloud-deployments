@@ -1,0 +1,3 @@
+[submodule "deployments/infra/postgres-operator-deploy"]
+	path = deployments/infra/postgres-operator-deploy
+	url = git@github.com:null-channel/postgres-operator-deploy.git

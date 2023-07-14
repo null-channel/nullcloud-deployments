@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: eddington-config
+data:
+  PORT: "8080"
+  ORY_PROXY_PORT: "80"
+  ORY_DOMAIN: "http://auth.nullcloud.io"
+  KUBECONFIG: "" # This is the path to the kubeconfig file don't set to use in cluster config

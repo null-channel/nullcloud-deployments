@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: postgress-operator
+  namespace: argocd
+spec:
+  destination:
+    name: in-cluster
+    namespace: postgres-operator
+  project: null-cloud
+  source:
+    path: ./
+    repoURL: https://github.com/null-channel/postgres-operator-deploy/
+    targetRevision: HEAD
+  syncPolicy:
+        automated:
+            prune: true
+            allowEmpty: true
+            selfHeal: true
