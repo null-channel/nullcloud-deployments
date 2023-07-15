@@ -1,7 +1,7 @@
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:
-  name: eddington-api-test-vitrual-service 
+  name: eddington-api-test-virtual-service 
 spec:
   hosts:
   - "*"
@@ -11,8 +11,23 @@ spec:
   - match:
     - uri:
         prefix: /api/v1
+      method:
+        exact: GET
     route:
     - destination:
         host: eddington-api
         port:
           number: 80
+---
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: configure-client-mtls-dr-with-workloadselector
+spec:
+  host: "*"
+  workloadSelector:
+    matchLabels:
+      app: eddington-api
+  trafficPolicy:
+    loadBalancer:
+      simple: ROUND_ROBIN
