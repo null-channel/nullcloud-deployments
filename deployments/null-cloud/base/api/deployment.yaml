@@ -20,4 +20,10 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: 8080
+        env:
+        - name: SENDGRID_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: sendgrid-api-key
+              key: SENDGRID_API_KEY
 
