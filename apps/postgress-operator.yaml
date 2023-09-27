@@ -13,7 +13,10 @@ spec:
     repoURL: https://github.com/null-channel/postgres-operator-deploy/
     targetRevision: HEAD
   syncPolicy:
-        automated:
-            prune: true
-            allowEmpty: true
-            selfHeal: true
+    syncOptions:
+    - ServerSideApply=true
+    - CreateNamespace=true
+    automated:
+        prune: true
+        allowEmpty: true
+        selfHeal: true

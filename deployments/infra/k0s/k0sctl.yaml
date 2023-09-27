@@ -23,7 +23,7 @@ spec:
       keyPath: /home/marek/.ssh/k0s-certs/k0s 
     role: worker
   k0s:
-    version: 1.24.9+k0s.0
+    version: 1.27.6+k0s.0
     dynamicConfig: false
     config:
       apiVersion: k0s.k0sproject.io/v1beta1
