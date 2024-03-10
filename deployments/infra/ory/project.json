@@ -1,0 +1,580 @@
+{
+  "id": "93796329-b6de-4af4-a6b5-fdff41e49e07",
+  "name": "null-cloud-prod",
+  "revision_id": "c51e1178-bb55-406c-acb9-fe71fcc2eea4",
+  "services": {
+    "identity": {
+      "config": {
+        "cookies": {
+          "domain": "hungry-jennings-4s54dkzkv7.projects.oryapis.com",
+          "path": "/",
+          "same_site": "Lax"
+        },
+        "courier": {
+          "smtp": {
+            "from_name": "null-cloud-prod via Ory"
+          },
+          "templates": {
+            "login_code": {
+              "valid": {
+                "email": {
+                  "body": {}
+                },
+                "sms": {
+                  "body": {}
+                }
+              }
+            },
+            "recovery": {
+              "invalid": {
+                "email": {
+                  "body": {}
+                }
+              },
+              "valid": {
+                "email": {
+                  "body": {}
+                }
+              }
+            },
+            "recovery_code": {
+              "invalid": {
+                "email": {
+                  "body": {}
+                }
+              },
+              "valid": {
+                "email": {
+                  "body": {}
+                }
+              }
+            },
+            "registration_code": {
+              "valid": {
+                "email": {
+                  "body": {}
+                }
+              }
+            },
+            "verification": {
+              "invalid": {
+                "email": {
+                  "body": {}
+                }
+              },
+              "valid": {
+                "email": {
+                  "body": {}
+                }
+              }
+            },
+            "verification_code": {
+              "invalid": {
+                "email": {
+                  "body": {}
+                }
+              },
+              "valid": {
+                "email": {
+                  "body": {}
+                },
+                "sms": {
+                  "body": {}
+                }
+              }
+            }
+          }
+        },
+        "feature_flags": {
+          "cacheable_sessions": false,
+          "use_continue_with_transitions": false
+        },
+        "identity": {
+          "default_schema_id": "preset://email",
+          "schemas": [
+            {
+              "id": "preset://email",
+              "url": "base64://ewogICIkaWQiOiAiaHR0cHM6Ly9zY2hlbWFzLm9yeS5zaC9wcmVzZXRzL2tyYXRvcy9pZGVudGl0eS5lbWFpbC5zY2hlbWEuanNvbiIsCiAgIiRzY2hlbWEiOiAiaHR0cDovL2pzb24tc2NoZW1hLm9yZy9kcmFmdC0wNy9zY2hlbWEjIiwKICAidGl0bGUiOiAiUGVyc29uIiwKICAidHlwZSI6ICJvYmplY3QiLAogICJwcm9wZXJ0aWVzIjogewogICAgInRyYWl0cyI6IHsKICAgICAgInR5cGUiOiAib2JqZWN0IiwKICAgICAgInByb3BlcnRpZXMiOiB7CiAgICAgICAgImVtYWlsIjogewogICAgICAgICAgInR5cGUiOiAic3RyaW5nIiwKICAgICAgICAgICJmb3JtYXQiOiAiZW1haWwiLAogICAgICAgICAgInRpdGxlIjogIkUtTWFpbCIsCiAgICAgICAgICAib3J5LnNoL2tyYXRvcyI6IHsKICAgICAgICAgICAgImNyZWRlbnRpYWxzIjogewogICAgICAgICAgICAgICJwYXNzd29yZCI6IHsKICAgICAgICAgICAgICAgICJpZGVudGlmaWVyIjogdHJ1ZQogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgIndlYmF1dGhuIjogewogICAgICAgICAgICAgICAgImlkZW50aWZpZXIiOiB0cnVlCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAidG90cCI6IHsKICAgICAgICAgICAgICAgICJhY2NvdW50X25hbWUiOiB0cnVlCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAiY29kZSI6IHsKICAgICAgICAgICAgICAgICJpZGVudGlmaWVyIjogdHJ1ZSwKICAgICAgICAgICAgICAgICJ2aWEiOiAiZW1haWwiCiAgICAgICAgICAgICAgfQogICAgICAgICAgICB9LAogICAgICAgICAgICAicmVjb3ZlcnkiOiB7CiAgICAgICAgICAgICAgInZpYSI6ICJlbWFpbCIKICAgICAgICAgICAgfSwKICAgICAgICAgICAgInZlcmlmaWNhdGlvbiI6IHsKICAgICAgICAgICAgICAidmlhIjogImVtYWlsIgogICAgICAgICAgICB9CiAgICAgICAgICB9LAogICAgICAgICAgIm1heExlbmd0aCI6IDMyMAogICAgICAgIH0KICAgICAgfSwKICAgICAgInJlcXVpcmVkIjogWwogICAgICAgICJlbWFpbCIKICAgICAgXSwKICAgICAgImFkZGl0aW9uYWxQcm9wZXJ0aWVzIjogZmFsc2UKICAgIH0KICB9Cn0K"
+            }
+          ]
+        },
+        "oauth2_provider": {
+          "override_return_to": false
+        },
+        "organizations": [],
+        "preview": {
+          "default_read_consistency_level": "strong"
+        },
+        "selfservice": {
+          "allowed_return_urls": [
+            "https://hungry-jennings-4s54dkzkv7.projects.oryapis.com",
+            "https://auth.nullcloud.io",
+            "/ui/consent",
+            "/ui/error",
+            "/ui/login",
+            "/ui/logout",
+            "/ui/recovery",
+            "/ui/registration",
+            "/ui/sessions",
+            "/ui/settings",
+            "/ui/verification",
+            "/ui/welcome"
+          ],
+          "default_browser_return_url": "/ui/welcome",
+          "flows": {
+            "error": {
+              "ui_url": "/ui/error"
+            },
+            "login": {
+              "after": {
+                "code": {
+                  "hooks": []
+                },
+                "hooks": [],
+                "lookup_secret": {
+                  "hooks": []
+                },
+                "oidc": {
+                  "hooks": []
+                },
+                "password": {
+                  "hooks": []
+                },
+                "totp": {
+                  "hooks": []
+                },
+                "webauthn": {
+                  "hooks": []
+                }
+              },
+              "before": {
+                "hooks": []
+              },
+              "lifespan": "30m0s",
+              "ui_url": "/ui/login"
+            },
+            "logout": {
+              "after": {}
+            },
+            "recovery": {
+              "after": {
+                "hooks": []
+              },
+              "before": {
+                "hooks": []
+              },
+              "enabled": true,
+              "lifespan": "30m0s",
+              "notify_unknown_recipients": false,
+              "ui_url": "/ui/recovery",
+              "use": "code"
+            },
+            "registration": {
+              "after": {
+                "code": {
+                  "hooks": []
+                },
+                "hooks": [],
+                "oidc": {
+                  "hooks": [
+                    {
+                      "config": {
+                        "auth": {
+                          "config": {
+                            "in": "header",
+                            "name": "Authorization",
+                            "value": "marekssecret"
+                          },
+                          "type": "api_key"
+                        },
+                        "body": "https://storage.googleapis.com/bac-gcs-production/aa6eba169b1131cb7bd8456bab9f9ed81826f602f6964d11022ef4fe1de45aa6878407b23c1d6e89a31d3f15ee2a58680a4aca62352b7c43f2898032f2f7e6f3.jsonnet",
+                        "can_interrupt": false,
+                        "method": "POST",
+                        "response": {
+                          "ignore": false,
+                          "parse": false
+                        },
+                        "url": "https://nullcloud.io/ory/webhook"
+                      },
+                      "hook": "web_hook"
+                    },
+                    {
+                      "hook": "session"
+                    }
+                  ]
+                },
+                "password": {
+                  "hooks": [
+                    {
+                      "config": {
+                        "auth": {
+                          "config": {
+                            "in": "header",
+                            "name": "Authorization",
+                            "value": "marekssecret"
+                          },
+                          "type": "api_key"
+                        },
+                        "body": "https://storage.googleapis.com/bac-gcs-production/aa6eba169b1131cb7bd8456bab9f9ed81826f602f6964d11022ef4fe1de45aa6878407b23c1d6e89a31d3f15ee2a58680a4aca62352b7c43f2898032f2f7e6f3.jsonnet",
+                        "can_interrupt": false,
+                        "method": "POST",
+                        "response": {
+                          "ignore": false,
+                          "parse": false
+                        },
+                        "url": "https://nullcloud.io/ory/webhook"
+                      },
+                      "hook": "web_hook"
+                    },
+                    {
+                      "hook": "session"
+                    }
+                  ]
+                },
+                "webauthn": {
+                  "hooks": [
+                    {
+                      "hook": "session"
+                    }
+                  ]
+                }
+              },
+              "before": {
+                "hooks": []
+              },
+              "enabled": true,
+              "lifespan": "30m0s",
+              "login_hints": false,
+              "ui_url": "/ui/registration"
+            },
+            "settings": {
+              "after": {
+                "hooks": [],
+                "lookup_secret": {
+                  "hooks": []
+                },
+                "oidc": {
+                  "hooks": []
+                },
+                "password": {
+                  "hooks": []
+                },
+                "profile": {
+                  "hooks": []
+                },
+                "totp": {
+                  "hooks": []
+                },
+                "webauthn": {
+                  "hooks": []
+                }
+              },
+              "before": {
+                "hooks": []
+              },
+              "lifespan": "30m0s",
+              "privileged_session_max_age": "15m0s",
+              "required_aal": "highest_available",
+              "ui_url": "/ui/settings"
+            },
+            "verification": {
+              "after": {
+                "hooks": []
+              },
+              "before": {
+                "hooks": []
+              },
+              "enabled": true,
+              "lifespan": "30m0s",
+              "notify_unknown_recipients": false,
+              "ui_url": "/ui/verification",
+              "use": "code"
+            }
+          },
+          "methods": {
+            "code": {
+              "config": {
+                "lifespan": "15m0s"
+              },
+              "enabled": true,
+              "mfa_enabled": false,
+              "passwordless_enabled": false
+            },
+            "link": {
+              "config": {
+                "base_url": "https://auth.nullcloud.io/",
+                "lifespan": "15m0s"
+              },
+              "enabled": true
+            },
+            "lookup_secret": {
+              "enabled": false
+            },
+            "oidc": {
+              "config": {
+                "providers": []
+              },
+              "enabled": false
+            },
+            "password": {
+              "config": {
+                "haveibeenpwned_enabled": true,
+                "identifier_similarity_check_enabled": true,
+                "ignore_network_errors": true,
+                "max_breaches": 1,
+                "min_password_length": 8
+              },
+              "enabled": true
+            },
+            "profile": {
+              "enabled": true
+            },
+            "totp": {
+              "config": {
+                "issuer": "Marek Counts's Project"
+              },
+              "enabled": false
+            },
+            "webauthn": {
+              "config": {
+                "passwordless": false,
+                "rp": {
+                  "display_name": "Marek Counts's Project",
+                  "id": "hungry-jennings-4s54dkzkv7.projects.oryapis.com",
+                  "origins": [
+                    "https://hungry-jennings-4s54dkzkv7.projects.oryapis.com"
+                  ]
+                }
+              },
+              "enabled": false
+            }
+          }
+        },
+        "serve": {
+          "admin": {
+            "base_url": "https://hungry-jennings-4s54dkzkv7.projects.oryapis.com/",
+            "request_log": {
+              "disable_for_health": true
+            }
+          },
+          "public": {
+            "base_url": "https://hungry-jennings-4s54dkzkv7.projects.oryapis.com/",
+            "cors": {
+              "enabled": false
+            },
+            "request_log": {
+              "disable_for_health": true
+            }
+          }
+        },
+        "session": {
+          "cookie": {
+            "domain": "hungry-jennings-4s54dkzkv7.projects.oryapis.com",
+            "name": "ory_session_hungryjennings4s54dkzkv7",
+            "path": "/",
+            "persistent": false,
+            "same_site": "Lax"
+          },
+          "lifespan": "72h0m0s",
+          "whoami": {
+            "required_aal": "highest_available",
+            "tokenizer": {
+              "templates": {
+                "eddington_jwk_set": {
+                  "claims_mapper_url": "https://storage.googleapis.com/bac-gcs-production/cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e.jsonnet",
+                  "jwks_url": "base64://",
+                  "ttl": "10m0s"
+                },
+                "jwt_example_template1": {
+                  "claims_mapper_url": "https://storage.googleapis.com/bac-gcs-production/373d3ba5778ea27829ab0bba5f1f904b222438ced260bdfdd6a4ab9454d1e2a2d72b88673ba158f94892d0d3bfc438da688b07c4300199d82986879c56b6691c.jsonnet",
+                  "jwks_url": "base64://ewogICJzZXQiOiAiZWRkaW5ndG9uLWp3ay1zZXQiLAogICJrZXlzIjogWwogICAgewogICAgICAiYWxnIjogIkVTMjU2IiwKICAgICAgImNydiI6ICJQLTI1NiIsCiAgICAgICJkIjogImJrSTdwY19NcmY2Uk5IYTdCSUtVRWFJaTJnR01FYy1GQS1wcVF4MW1HVk0iLAogICAgICAia2lkIjogImUyZDFjYzA5LTY1NTAtNGZiNS04ZTlmLWJkMGQ4NmNiZDY5NiIsCiAgICAgICJrdHkiOiAiRUMiLAogICAgICAidXNlIjogInNpZyIsCiAgICAgICJ4IjogIkVISERGZzkwbnRhbW1BalZYWFRuZUltVGoyVzZ2TmU0d0RnU1hMSVZjSjQiLAogICAgICAieSI6ICJ1Y3VMUnRhU1hZWWlMTEdnRXVZcEJBc0l0aDBEcWV5dVBEZzYydS0wdnJ3IgogICAgfQogIF0KfQo=",
+                  "ttl": "10m0s"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "oauth2": {
+      "config": {
+        "clients": {
+          "http": {
+            "disallow_private_ip_ranges": true
+          }
+        },
+        "dev": true,
+        "hsm": {
+          "enabled": false
+        },
+        "oauth2": {
+          "client_credentials": {
+            "default_grant_allowed_scope": false
+          },
+          "exclude_not_before_claim": false,
+          "expose_internal_errors": true,
+          "grant": {
+            "jwt": {
+              "iat_optional": false,
+              "jti_optional": false,
+              "max_ttl": "720h0m0s"
+            }
+          },
+          "hashers": {
+            "algorithm": "pbkdf2",
+            "pbkdf2": {
+              "iterations": 10000
+            }
+          },
+          "pkce": {
+            "enforced": false,
+            "enforced_for_public_clients": false
+          },
+          "session": {
+            "encrypt_at_rest": true
+          }
+        },
+        "oidc": {
+          "dynamic_client_registration": {
+            "enabled": false
+          },
+          "subject_identifiers": {}
+        },
+        "serve": {
+          "admin": {
+            "cors": {
+              "allow_credentials": true,
+              "allowed_headers": [
+                "Accept",
+                "Content-Type",
+                "Content-Length",
+                "Accept-Language",
+                "Content-Language",
+                "Authorization"
+              ],
+              "allowed_methods": [
+                "POST",
+                "GET",
+                "PUT",
+                "PATCH",
+                "DELETE",
+                "CONNECT",
+                "HEAD",
+                "OPTIONS",
+                "TRACE"
+              ],
+              "debug": false,
+              "enabled": false,
+              "exposed_headers": [
+                "Cache-Control",
+                "Expires",
+                "Last-Modified",
+                "Pragma",
+                "Content-Length",
+                "Content-Language",
+                "Content-Type"
+              ],
+              "max_age": 0
+            },
+            "tls": {
+              "enabled": false
+            }
+          },
+          "cookies": {
+            "domain": "hungry-jennings-4s54dkzkv7.projects.oryapis.com",
+            "names": {
+              "consent_csrf": "ory_oauth2_consent_csrf_hungryjennings4s54dkzkv7",
+              "login_csrf": "ory_oauth2_login_csrf_hungryjennings4s54dkzkv7",
+              "session_csrf": "ory_oauth2_session_csrf_hungryjennings4s54dkzkv7"
+            },
+            "same_site_legacy_workaround": false,
+            "same_site_mode": "Lax",
+            "secure": true
+          },
+          "public": {
+            "cors": {
+              "allow_credentials": true,
+              "allowed_headers": [
+                "Accept",
+                "Content-Type",
+                "Content-Length",
+                "Accept-Language",
+                "Content-Language",
+                "Authorization"
+              ],
+              "allowed_methods": [
+                "POST",
+                "GET",
+                "PUT",
+                "PATCH",
+                "DELETE",
+                "CONNECT",
+                "HEAD",
+                "OPTIONS",
+                "TRACE"
+              ],
+              "debug": false,
+              "enabled": false,
+              "exposed_headers": [
+                "Cache-Control",
+                "Expires",
+                "Last-Modified",
+                "Pragma",
+                "Content-Length",
+                "Content-Language",
+                "Content-Type"
+              ],
+              "max_age": 0
+            },
+            "tls": {
+              "enabled": false
+            }
+          },
+          "tls": {
+            "enabled": false
+          }
+        },
+        "strategies": {
+          "access_token": "jwt",
+          "scope": "wildcard"
+        },
+        "ttl": {
+          "access_token": "1h0m0s",
+          "auth_code": "30m0s",
+          "id_token": "1h0m0s",
+          "login_consent_request": "30m0s",
+          "refresh_token": "720h0m0s"
+        },
+        "urls": {
+          "consent": "/ui/consent",
+          "error": "/ui/error",
+          "login": "/ui/login",
+          "logout": "/ui/logout",
+          "post_logout_redirect": "/oauth2/fallbacks/logout/callback",
+          "registration": "/ui/registration",
+          "self": {
+            "admin": "https://hungry-jennings-4s54dkzkv7.projects.oryapis.com/admin",
+            "issuer": "https://hungry-jennings-4s54dkzkv7.projects.oryapis.com",
+            "public": "https://hungry-jennings-4s54dkzkv7.projects.oryapis.com"
+          }
+        },
+        "webfinger": {
+          "jwks": {},
+          "oidc_discovery": {
+            "auth_url": "https://hungry-jennings-4s54dkzkv7.projects.oryapis.com/oauth2/auth",
+            "jwks_url": "https://hungry-jennings-4s54dkzkv7.projects.oryapis.com/.well-known/jwks.json",
+            "token_url": "https://hungry-jennings-4s54dkzkv7.projects.oryapis.com/oauth2/token",
+            "userinfo_url": "https://hungry-jennings-4s54dkzkv7.projects.oryapis.com/userinfo"
+          }
+        }
+      }
+    },
+    "permission": {
+      "config": {
+        "namespaces": []
+      }
+    }
+  },
+  "slug": "hungry-jennings-4s54dkzkv7",
+  "state": "running"
+}

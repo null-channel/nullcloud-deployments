@@ -11,19 +11,19 @@ spec:
       keyPath: /home/marek/.ssh/k0s-certs/k0s 
     role: controller+worker
   - ssh:
-      address: 10.1.2.2
-      user: root
-      port: 22
-      keyPath: /home/marek/.ssh/k0s-certs/k0s 
-    role: worker
-  - ssh:
       address: 10.1.2.3
       user: root
       port: 22
       keyPath: /home/marek/.ssh/k0s-certs/k0s 
     role: worker
+  - ssh:
+      address: 10.1.2.4
+      user: root
+      port: 22
+      keyPath: /home/marek/.ssh/k0s-certs/k0s 
+    role: worker
   k0s:
-    version: 1.27.6+k0s.0
+    version: 1.28.4+k0s.0
     dynamicConfig: false
     config:
       apiVersion: k0s.k0sproject.io/v1beta1

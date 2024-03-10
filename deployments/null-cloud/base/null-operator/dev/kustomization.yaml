@@ -1,0 +1,8 @@
+resources:
+- ../config/default/
+
+images:
+- name: nullchannel/eddington-null-operator
+  newTag: newtag
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
