@@ -1,2 +1,7 @@
 resources:
 - ../default/
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+images:
+- name: eddington-ui
+  newTag: 54446c25ff72e81fa0aecc48ea18ec13f76142a8
