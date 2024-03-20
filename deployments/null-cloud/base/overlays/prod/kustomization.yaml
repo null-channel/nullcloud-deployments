@@ -1,6 +1,6 @@
 resources:
-- ../../ui
-- ../../api
-- ../../container-runner/default
+- ../../ui/prod
+- ../../api/prod
+- ../../container-runner/default/prod
 - ../../networking
 

@@ -9,7 +9,7 @@ spec:
     namespace: null-cloud
   project: null-cloud
   source:
-    path: deployments/null-cloud/overlays/prod
+    path: deployments/null-cloud/overlays/dev
     repoURL: https://github.com/null-channel/nullcloud-deployments/
     targetRevision: HEAD
   syncPolicy:
