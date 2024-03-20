@@ -4,4 +4,4 @@ resources:
 - ../base/
 images:
 - name: nullchannel/
-  newTag: be5deddc476e2b5bd98aee6dd4d55b528415f96b
+  newTag: 3b18e3209d746b7e2f90ca3fdc4d33c2175fcd04
