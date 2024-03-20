@@ -9,19 +9,19 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: eddington-ui
+  name: nullcloud-ui
 spec:
   selector:
     matchLabels:
-      app: eddington-ui
+      app: nullcloud-ui
   template:
     metadata:
       labels:
-        app: eddington-ui
+        app: nullcloud-ui
     spec:
       containers: 
-      - name: eddington-ui
-        image: nullchannel/eddington-ui:8527d041ee72ee474b55819f11a70262053ec514
+      - name: nullcloud-ui
+        image: nullchannel/nullcloud-ui:8527d041ee72ee474b55819f11a70262053ec514
         resources:
           limits:
             memory: "128Mi"
