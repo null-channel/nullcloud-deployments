@@ -3,6 +3,6 @@ resources:
 
 images:
 - name: nullchannel/eddington-null-operator
-  newTag: f67a9d64ae7a5c5108759c12a5a47f1488248358
+  newTag: ac70654e371b2f548492452b63f31c55e1d1e58b
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
