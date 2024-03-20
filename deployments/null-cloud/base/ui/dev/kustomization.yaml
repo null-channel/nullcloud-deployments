@@ -6,4 +6,4 @@ images:
 - name: nullchannel/
   newTag: 3b18e3209d746b7e2f90ca3fdc4d33c2175fcd04
 - name: nullchannel/nullcloud-ui
-  newTag: 003154114caddf893295e75b0fad95df496fd822
+  newTag: 86fe80fc0bdb6375a687cbeaae322d6aee5e9ebe
