@@ -4,4 +4,4 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
 - name: nullchannel/eddington-container-runner
-  newTag: 7b99e049b89e2ae130ddb76179025a40d38b47d5
+  newTag: f96d7d0e80fbbf9869bd8d7ffa2decc87385d084
