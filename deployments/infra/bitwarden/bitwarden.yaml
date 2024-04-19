@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: bitwarden-k8s-secrets-manager
+  namespace: openshift-gitops
+spec:
+  destination:
+    name: in-cluster
+  project: default
+  helm:
+    path: helm
+    repoURL: https://github.com/rhpds/bitwarden-k8s-secrets-manager.git
+    targetRevision: main

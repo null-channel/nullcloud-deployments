@@ -1,0 +1,7 @@
+resources:
+  - kpack.yaml
+  - kpack-cluster-stack.yaml
+  - kpack-cluster-store.yaml
+  - kpack-service-account.yaml
+  - secrets.yaml
+  - builder.yaml

@@ -3,3 +3,4 @@ resources:
 - ../../api/dev
 - ../../container-runner/dev
 - ../../networking
+- ../../kpack
