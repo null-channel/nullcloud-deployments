@@ -5,7 +5,7 @@ metadata:
   namespace: kpack-system
 spec:
   serviceAccountName: kpack-service-account
-  tag: nullcloud-builder-go
+  tag: nullchannel/nullcloud-builder-go
   stack:
     name: base
     kind: ClusterStack
