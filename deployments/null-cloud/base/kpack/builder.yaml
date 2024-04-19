@@ -4,7 +4,7 @@ metadata:
   name: builder-go
   namespace: kpack-system
 spec:
-  serviceAccountName: tutorial-service-account
+  serviceAccountName: kpack-service-account
   tag: nullcloud-builder-go
   stack:
     name: base
