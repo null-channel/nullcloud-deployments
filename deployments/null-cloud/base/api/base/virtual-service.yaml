@@ -16,3 +16,11 @@ spec:
         host: eddington-api
         port:
           number: 80
+  - route:
+    - destination:
+        host: nullcloud-ui
+        port:
+          number: 80
+    match:
+    - uri:
+        prefix: /
