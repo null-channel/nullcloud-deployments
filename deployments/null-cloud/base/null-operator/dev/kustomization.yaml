@@ -1,5 +1,5 @@
 resources:
-- ../config/default/
+- ../base/default/
 
 images:
 - name: nullchannel/eddington-null-operator

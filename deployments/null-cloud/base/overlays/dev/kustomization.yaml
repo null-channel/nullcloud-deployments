@@ -4,3 +4,4 @@ resources:
 - ../../container-runner/dev
 - ../../networking
 - ../../kpack
+- ../../null-operator/dev
