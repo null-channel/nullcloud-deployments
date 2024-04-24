@@ -18,6 +18,6 @@ spec:
           number: 80
   - route:
     - destination:
-        host: null-web.null-cloud.svc.cluster.local
+        host: nullcloud-ui.null-cloud.svc.cluster.local
         port:
           number: 80
