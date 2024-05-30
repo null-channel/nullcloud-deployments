@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: container-builder-config
-  namespace: eddington-admin
+  namespace: nullcloud-system
 data:
   REGISTRY_URL: "nullchannel"
   DOCKER_HOST: "unix:///eddington/var/run/docker.sock"

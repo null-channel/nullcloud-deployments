@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: eddington-container-builder
-  namespace: eddington-admin
+  namespace: nullcloud-system
 spec:
   selector:
     matchLabels:
