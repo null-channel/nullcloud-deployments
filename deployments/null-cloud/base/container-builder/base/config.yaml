@@ -5,5 +5,4 @@ metadata:
   namespace: nullcloud-system
 data:
   REGISTRY_URL: "nullchannel"
-  DOCKER_HOST: "unix:///eddington/var/run/docker.sock"
 
