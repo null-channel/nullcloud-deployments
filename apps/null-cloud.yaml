@@ -6,7 +6,7 @@ metadata:
 spec:
   destination:
     name: in-cluster
-    namespace: null-cloud
+    namespace: nullcloud-system
   project: null-cloud
   source:
     path: deployments/null-cloud/overlays/dev
