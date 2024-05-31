@@ -14,7 +14,7 @@ spec:
     spec:
       containers: 
       - name: eddington-container-builder
-        image: nullchannel/eddington-container-builder:latest
+        image: nullchannel/eddington-container-builder:325dcee676b36bd35f329b7961661a1d6d3b8913
         securityContext:
           privileged: true
           runAsUser: 0
