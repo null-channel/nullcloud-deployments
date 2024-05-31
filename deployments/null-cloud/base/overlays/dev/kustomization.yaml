@@ -5,4 +5,4 @@ resources:
 - ../../networking
 - ../../kpack
 - ../../null-operator/dev
-- ../../container-builder/dev
+- ../../container-builder/overlays/dev
