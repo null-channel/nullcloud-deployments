@@ -13,11 +13,11 @@ spec:
         prefix: /api/v1
     route:
     - destination:
-        host: eddington-api.null-cloud.svc.cluster.local
+        host: eddington-api.nullcloud-system.svc.cluster.local
         port:
           number: 80
   - route:
     - destination:
-        host: nullcloud-ui.null-cloud.svc.cluster.local
+        host: nullcloud-ui.nullcloud-system.svc.cluster.local
         port:
           number: 80
